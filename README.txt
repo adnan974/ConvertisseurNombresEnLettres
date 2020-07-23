@@ -1,0 +1,1 @@
+Ce projet utilise Javascript. Aucun framework ou livrairy n'est utilisé.
