@@ -49,7 +49,7 @@ function numberOfUnits(number){
     
 }
 
-//console.log("resultat: "+numberOfUnits(8));
+console.log("nb unité : "+numberOfUnits(450));
 
 
 
@@ -75,19 +75,23 @@ function numberOfTens(number){
     return result;
 }
 
-console.log("resultat: "+numberOfTens(55));
+console.log("rnb dizaine : "+numberOfTens(450));
 
 // Fonction qui récupère les centaines d'un nombre
-/*function numberOfHundred(number){
+function numberOfHundred(number){
     let numberLenght = length_number(number);
     let unitNumbers =  numberOfUnits(number);
+    let result;
+
     switch(numberLenght){
         case 3:
-            return (number - unitNumbers)/100;
+            return (number - number%100)/100;
             break;
         case 2,1:
             return 0;
         default:
             return null;
     }
-}*/
+}
+
+console.log("nb centaine : "+numberOfHundred(450));
